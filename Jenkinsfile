@@ -7,7 +7,7 @@ node {
   }
 
   stage 'package'
-  docker.build('birla01/acmecorp-app').push()
+  docker.build('kohsuke/acmecorp-app').push()
 
   stage 'deploy'
   sh './deploy.sh'
