@@ -8,7 +8,7 @@ node {
 
   stage 'package'
   docker.build('kohsuke/acmecorp-app').push()
-
+      echo "stage passed"
   stage 'deploy'
   sh './deploy.sh'
 }
